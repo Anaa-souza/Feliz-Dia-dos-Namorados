@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Feliz Dia dos Namorados</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background:#f8b4f7;
+      color: #000000;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+    }
+
+    header {
+      margin-top: 30px;
+    }
+
+    h1 {
+      color: #852d83;
+      font-size: 3em;
+    }
+
+    .heart {
+      font-size: 4em;
+      color: white;
+      animation: pulse 1s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+    }
+
+    .message {
+      background: #ffffff;
+      padding: 20px;
+      border-radius: 15px;
+      max-width: 600px;
+      margin: 20px auto;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    .surprise-button {
+      background-color: #e159de;
+      border: none;
+      color: white;
+      padding: 15px 25px;
+      border-radius: 10px;
+      font-size: 1.2em;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .surprise-button:hover {
+      background-color: #e977e6;
+    }
+
+    .popup {
+      display: none;
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.7);
+      justify-content: center;
+      align-items: center;
+    }
+
+    .popup-content {
+      background: white;
+      padding: 30px;
+      border-radius: 15px;
+      text-align: center;
+      max-width: 500px;
+    }
+
+    .close {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background: #935284;
+      border: none;
+      color: white;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>𝐅𝐞𝐥𝐢𝐳 𝐃𝐢𝐚 𝐝𝐨𝐬 𝐍𝐚𝐦𝐨𝐫𝐚𝐝𝐨𝐬, 𝐦𝐞𝐮 𝐛𝐛 𝐥𝐢𝐧𝐝𝐨♡</h1>
+    <div class=>𝐏𝐚𝐫𝐚 𝐂𝐚𝐢𝐨 𝐩𝐨𝐦𝐩𝐨𝐦💜</div>
+  </header>
+
+  <div class="message">
+   <img src="img/nova hello kitty.png" width=“10%” height=“100”>
+   
+    <p>Amor, nesse dia de hoje eu quero que você saiba o quanto eu te amo e que independente das brigas que temos, eu nunca vou deixar de te amar! Meu coração escolheu você, eu te amo infinito. ♡</p>
+    <p>Com todo meu amor,<br>Sua pretinha🙈</p>
+  </div>
+
+  <button class="surprise-button" onclick="showSurprise()">Clique aqui!</button>
+
+  <div class="popup" id="surprisePopup">
+    <div class="popup-content">
+      <h2>Eu te amo demaaaaaaais! 💗</h2>
+      <p>Você é incrível meu amor, obrigada por ser meu.😽</p>
+    
+      <button class="close" onclick="closeSurprise()">Fechar</button>
+    </div>
+  </div>
+
+  <script>
+    function showSurprise() {
+      document.getElementById('surprisePopup').style.display = 'flex';
+    }
+
+    function closeSurprise() {
+      document.getElementById('surprisePopup').style.display = 'none';
+    }
+  </script>
+</body>
+</html>
