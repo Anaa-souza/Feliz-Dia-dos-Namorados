@@ -26,6 +26,12 @@ Ao clicar, o coração do seu amor vai **derreter com a mensagem escondida** �
 💜 Recursos do Site
 
 ✨ Título encantador: Uma saudação personalizada e cheia de amor
+
+
 💌 Mensagem especial: Texto romântico envolto em um cartão estilizado
+
+
 💘 Botão surpresa: Revela um popup com uma mensagem extra
+
+
 🎀 Animação pulsante: Um coração que bate, simbolizando o amor verdadeiro
